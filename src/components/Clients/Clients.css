@@ -1,0 +1,29 @@
+@media (min-width: 1400px) {
+    .clients div {
+      display: flex;
+      justify-content: center;
+      gap: 55px;
+      margin-top: 85px;
+      margin-bottom: 85px;
+    }
+  }
+  @media (max-width: 992px) {
+    .clients div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .clients div {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .clients div img {
+      width: 50%;
+    }
+  }
