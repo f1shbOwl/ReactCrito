@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../index.css'
 
 import img_about from '../../assets/images/about-image.svg'
 
