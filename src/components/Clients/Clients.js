@@ -1,5 +1,4 @@
 import React from 'react';
-import './Clients.css';
 
 import img_paperz from '../../assets/images/paperz.png';
 import img_dorfus from '../../assets/images/dorfus.png';

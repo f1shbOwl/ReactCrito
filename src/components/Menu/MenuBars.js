@@ -1,5 +1,4 @@
 import React from 'react'
-import './MenuBars.css'
 
 const MenuBars = () => {
   return (

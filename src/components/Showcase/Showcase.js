@@ -1,5 +1,4 @@
 import React from 'react'
-import './Showcase.css'
 
 import img_ShowCaseImage from '../../assets/images/showcase-image.svg'
 
