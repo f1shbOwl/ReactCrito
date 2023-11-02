@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import MenuBars from '../Menu/MenuBars'
 import Menu from '../Menu/Menu'
@@ -10,12 +11,9 @@ const Header = () => {
   return (
     <header>
         <div className="container">
-            <a href="index.html"><img src={img_logo} alt="crito logotype"/></a>
-            
+            <NavLink to="/"><img src={img_logo} alt="crito logotype"/></NavLink>
             <MenuBars />
-
             <Menu />
-
         </div>
     </header>
   )

@@ -17,20 +17,22 @@ import Newsletter from '../components/Newsletter/Newsletter'
 
 const Home = () => {
   return (
-    <div>
-        <Header />
-        <Showcase />
-        <Clients />
-        <Features />
-        <AboutCompany />
-        <OurServices />
-        <ChooseUs />
-        <ProjectCases />
-        <MeetOurTeam />
-        <Testimonial />
-        <ArticleNews />
-        <Newsletter />
-        <Footer />
+    <div className='wrapper'>
+      <div>
+          <Header />
+          <Showcase />
+          <Clients />
+          <Features />
+          <AboutCompany />
+          <OurServices />
+          <ChooseUs />
+          <ProjectCases />
+          <MeetOurTeam />
+          <Testimonial />
+          <ArticleNews />
+          <Newsletter />
+          <Footer />
+      </div>
     </div>
   )
 }

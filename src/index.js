@@ -19,7 +19,6 @@ root.render(
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
-    {/* <App /> */}
   </React.StrictMode>
 );
 
