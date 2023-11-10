@@ -8,14 +8,16 @@ import LocationMap from '../components/LocationMap/LocationMap'
 
 const Contacts = () => {
   return (
-    <div>
-      <Header />
-      <LetsConnect />
-      <Contact />
-      <MessageForm />
-      <LocationMap />
-      <Footer />
-    </div>
+    <main>
+      <div>
+        <Header />
+        <LetsConnect />
+        <Contact />
+        <MessageForm />
+        <LocationMap />
+        <Footer />
+      </div>
+    </main>
   )
 }
 

@@ -6,7 +6,6 @@ import Menu from '../Menu/Menu'
 import img_logo from '../../assets/images/logo.svg'
 
 
-
 const Header = () => {
   return (
     <header>

@@ -1,18 +1,18 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const LetsConnect = () => {
+const NewsTop = () => {
   return (
-    <section className="letsConnect">
+    <section className="newsTop">
     <div className="container">
         <div className="content">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/Contacts" >Contact</NavLink>
-            <h1>Let's Connect</h1>  
+            <NavLink to="/News" >News</NavLink>
+            <h1>News & Articles</h1>  
         </div>
     </div>
 </section>
   )
 }
 
-export default LetsConnect
+export default NewsTop

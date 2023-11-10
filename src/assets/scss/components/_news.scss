@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
+@import '/src/assets/scss/index.css';
+
+.newsTop {
+
+    background-color: #F0EFE9;
+    background-image: url('/src/assets/images/image-linestwo.svg');
+    background-repeat: no-repeat;
+    background-position: -2% 102%;
+
+    @media (max-width: 576px) {
+        background-image: none;
+    }
+    @media (max-width: 768px) {
+        background-image: none;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            
+        
+        
+        .content {
+            text-align: center;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+
+            
+            a {
+                font-size: 16px;
+                font-weight: 300;
+                color: #191919;
+                text-decoration: none;
+
+                margin-right: 0px;
+                display: block;
+                margin-bottom: 20px;
+
+                @media (min-width: 768px) {
+                    display: inline-block;
+                    margin-right: 10px;
+                    
+                }
+
+                @media (max-width: 576px) {
+                    width: 250px;
+                    margin-left: 3.5rem;
+                }
+
+                &:hover {
+                    color: rgb(218, 16, 167);
+                    text-decoration: underline;
+                    animation: btn-round 0.5s infinite;
+                    animation-timing-function: linear;
+                }
+
+                &.active {
+                    font-weight: 500;
+                }
+            }
+        
+        
+            h1 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 56px;
+
+                @media (min-width: 768px) {
+                    font-size: 56px;
+                }
+
+
+                @media (min-width: 1200px) {
+                    font-size: 70px;
+                }    
+                
+            }
+        }
+
+    }
+}

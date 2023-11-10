@@ -3,6 +3,7 @@ import React from 'react'
 import img_25mar from '../../assets/images/25mar.svg'
 import img_17mar from '../../assets/images/25mar.svg'
 import img_13mar from '../../assets/images/25mar.svg'
+import { NavLink } from 'react-router-dom'
 
 const ArticleNews = () => {
   return (
@@ -10,7 +11,7 @@ const ArticleNews = () => {
         <div className="container">
             <div className="section-title">
                 <p>Article & News</p>
-                <h2>Get Every Single Article & News <a className="btn-transparent" href="#">Browse Articles <i className="fa-regular fa-arrow-up-right"></i></a></h2>
+                <h2>Get Every Single Article & News<NavLink to="/ArticleNews" className="btn-transparent">Browse Articles <i className="fa-regular fa-arrow-up-right"></i></NavLink></h2>
             </div>
             <div className="article-grid">
                 <a className="article" href="#">

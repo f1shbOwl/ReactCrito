@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import img_Kristine from '../../assets/images/Kristine.svg'
 import img_Mark from '../../assets/images/Mark.svg'
@@ -36,11 +37,11 @@ const MeetOurTeam = () => {
                 </div>
             </div>
             <div className="center-button">
-                <a href="#"><span className="dot"></span></a>
-                <a href="#"><span className="dot active"></span></a>
-                <a href="#"><span className="dot"></span></a>
-                <a href="#"><span className="dot"></span></a>
-                <a href="#"><span className="dot"></span></a>
+                <NavLink to="/TeamPageOne"><span className="dot"></span></NavLink>
+                <NavLink to="/TeamPageTwo"><span className="dot active"></span></NavLink>
+                <NavLink to="/TeamPageThree"><span className="dot"></span></NavLink>
+                <NavLink to="/TeamPageFour"><span className="dot"></span></NavLink>
+                <NavLink to="/TeamPageFive"><span className="dot"></span></NavLink>
             </div>
         </div>
      </section>
