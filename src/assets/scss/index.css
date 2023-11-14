@@ -2060,6 +2060,10 @@ body {
     width: auto;
   }
 }
+.leave-message .container form label {
+  color: red;
+  margin-left: 1rem;
+}
 .leave-message .container form .btn-yellow {
   margin-top: 2rem;
   width: 100%;
