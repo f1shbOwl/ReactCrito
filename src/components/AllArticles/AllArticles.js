@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 function AllArticles() {
@@ -23,12 +24,12 @@ function AllArticles() {
             
             <div className="article-grid">
                 {articles.map(article => (
-                    <div className="article" key={article.id}>
+                    <NavLink to={`/NewsDetails/${article.id}`} className="article" key={article.id}>
                         <img src={article.imageUrl}></img>
                         <p>{article.category}</p>
                         <h3>{article.title}</h3>
                         <p>{article.content}</p>
-                    </div>
+                    </NavLink>
                 ))}
             </div>
         </div>

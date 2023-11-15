@@ -3,6 +3,8 @@ import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import Newsletter from '../components/Newsletter/Newsletter'
 import NewsTop from '../components/NewsTop/NewsTop'
+import ArticleDetails from '../components/ArticleDetails/ArticleDetails'
+import ArticleNews from '../components/ArticleNews/ArticleNews'
 
 const NewsDetails = () => {
   return (
@@ -10,7 +12,8 @@ const NewsDetails = () => {
         <div>
             <Header />
             <NewsTop />
-            <div>Placeholder News</div>
+            <ArticleDetails />
+            <ArticleNews />
             <Newsletter />
             <Footer />
         </div>

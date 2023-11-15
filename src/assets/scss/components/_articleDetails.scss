@@ -1,0 +1,40 @@
+.article-details {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .container {
+
+        .article {
+
+            .section-title {
+                max-width: 768px;
+                
+            }
+        }
+
+        .article-info {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+
+            p {
+                font-family: 'DM-Sans, inter-serif';
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+
+        img {
+            width: 758px;
+            height: 500px;
+            object-fit: cover;
+
+        }
+
+        .content {
+            margin-top: 2rem;
+        }
+
+        
+    }
+}
