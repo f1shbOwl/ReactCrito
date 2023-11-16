@@ -9,48 +9,74 @@ const formatDate = (dateString) => {
 
 const ArticleDetails = () => {
   const { id } = useParams();
-  const [articleDetails, setArticleDetails] = useState(null);
+  const [article, setArticleDetails] = useState(null);
 
   useEffect(() => {
-    const getArticleDetails = async () => {
-      try {
-        const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
-        const data = await result.json();
-        setArticleDetails(data);
-      } catch (error) {
-        console.error('Error fetching article details:', error);
-      }
-    };
-
     getArticleDetails();
-  }, [id]);
+  }, []);
 
-  if (!articleDetails) {
-    return <p>Loading...</p>;
-  }
+  const getArticleDetails = async () => {
+    if (id !== undefined) {
+      const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
 
-  console.log('Published Date from API:', articleDetails.published);
+      if (result.status === 200) {
+        setArticleDetails(await result.json());
+      }
+    }
+  };
 
 
 
-  return (
+return article ? 
+  (
     <div className="article-details">
         <div className="container">
             <div className="article">
                 <div className="section-title">
-                    <h2>{articleDetails.title}</h2>
+                    <h2>{article.title}</h2>
                 </div>
                 <div className="article-info">
-                    <p>{articleDetails.author}</p>
-                    <p>{formatDate(articleDetails.published)}</p>
-                    <p>{articleDetails.category}</p>
+                    <p>{article.author}</p>
+                    <p>{formatDate(article.published)}</p>
+                    <p>{article.category}</p>
                 </div>
-                <img src={articleDetails.imageUrl}></img>
-                <p className="content">{articleDetails.content}</p> 
+                <img src={article.imageUrl}></img>
+                <p className="content">{article.content}</p> 
             </div>
         </div>
     </div>
-  );
+  )
+:
+  (
+    <div className="missing-title">
+      <h2>No article found</h2>
+    </div>
+  )
+
 };
 
 export default ArticleDetails;
+
+
+// kod ifrån chat-gpt
+// const ArticleDetails = () => {
+//   const { id } = useParams();
+//   const [articleDetails, setArticleDetails] = useState(null);
+
+//   useEffect(() => {
+//     const getArticleDetails = async () => {
+//       try {
+//         const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
+//         const data = await result.json();
+//         setArticleDetails(data);
+//       } catch (error) {
+//         console.error('Error fetching article details:', error);
+//       }
+//     };
+
+//     getArticleDetails();
+//   }, [id]);
+
+//   if (!articleDetails) {
+//     return <p>Loading...</p>;
+//   }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Newsletter from '../components/Newsletter/Newsletter'
 import NewsTop from '../components/NewsTop/NewsTop'
 import ArticleDetails from '../components/ArticleDetails/ArticleDetails'
 import ArticleNews from '../components/ArticleNews/ArticleNews'
@@ -13,8 +12,7 @@ const NewsDetails = () => {
             <Header />
             <NewsTop />
             <ArticleDetails />
-            <ArticleNews />
-            <Newsletter />
+            <div style={{ backgroundColor: '#F0EFE9'}}><ArticleNews /></div>
             <Footer />
         </div>
     </main>

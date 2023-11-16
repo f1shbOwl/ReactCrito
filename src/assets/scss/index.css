@@ -2319,3 +2319,9 @@ body {
 .article-details .container .content {
   margin-top: 2rem;
 }
+
+.missing-title h2 {
+  text-align: center;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}

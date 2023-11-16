@@ -9,12 +9,14 @@ import Contacts from './views/Contacts';
 import NotFound from './views/NotFound';
 import ArticleNews from './views/News';
 import NewsDetails from './views/NewsDetails';
+import AutoScrollToTop from './components/ScrollToTop/AutoScrollToTop';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <AutoScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Contacts' element={<Contacts />} />
