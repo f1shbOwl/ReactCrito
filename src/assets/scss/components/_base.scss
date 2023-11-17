@@ -39,7 +39,9 @@ html, body, main {
     
 }
 
-// Provade lägga till en wrapper
+// // Provade lägga till en wrapper för att se om det skulle lösa dimension-problemet som uppstod när jag började med react. 
+// Funkade inte //
+
 .wrapper {
   color: #191919;
   font-family: 'inter', sans-serif;
@@ -197,18 +199,6 @@ header {
         gap: 70px;
         align-items: center;
         justify-content: space-between;
-        
-        .menu-bars {
-            border: none;
-            font-size: 25px;
-            background-color: transparent;
-            color: #191919;
-
-
-            @media (min-width: 992px) {
-                display: none;
-            }
-        }
 
         .menu {
             display: none;

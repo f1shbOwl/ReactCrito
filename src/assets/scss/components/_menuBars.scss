@@ -1,0 +1,57 @@
+.menu-bars {
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    color: #191919;
+    z-index: 999;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    
+    .fa-times {
+        color: #FFFFFF;
+    }
+  
+  
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .menu-links {
+    position: fixed;
+    top: 0;
+    right: 100vw;
+    height: 45vh;
+    width: 100%;
+    background-color: rgba(19,19,19,0.99);
+    transition: right 0.3 ease;
+    display: flex;
+    justify-content: center;
+    
+    &.open {
+        right: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                margin-bottom: 1rem;
+                
+
+                a {
+                    color: #F9D783;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+  }

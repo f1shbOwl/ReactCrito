@@ -159,7 +159,6 @@
             padding-top: 2rem;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            // grid-template-rows: auto auto auto;
             gap: 1rem;
 
             @media (max-width: 576px) {
@@ -179,9 +178,34 @@
             }
 
             .article {
+                display: flex;
+                flex-direction: column;
                 color: #191919;
                 text-decoration: none;
-                
+
+                div {
+                    display: flex;
+                    gap: 1rem;
+                    // background-color: #F9D783; (kan vara snyggare med background-color på hela??? oklart.)
+                    
+
+                    .category {
+                        font-weight: 600;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        background-color: #F9D783;
+
+                    }
+
+                    .author {
+                        font-weight: 500;
+                    }
+
+                    .published {
+                        font-weight: 300;
+
+                    }
+                }
                 
                 &:hover {
                     text-decoration: underline;

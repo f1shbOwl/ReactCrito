@@ -12,3 +12,5 @@ const AutoScrollToTop = () => {
 };
 
 export default AutoScrollToTop;
+
+/* fick aldrig den här att fungera, provat olika webbläsare */
